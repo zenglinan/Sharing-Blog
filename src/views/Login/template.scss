@@ -1,0 +1,22 @@
+.loginWrapper {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  .login {
+    border: 2px solid rgb(234, 238, 251);
+    padding: 46px 30px;
+    border-radius: 6px;
+    div.item {
+      display: flex;
+      margin-bottom: 25px;
+      .el-input{
+        margin-top: 10px;
+      }
+    }
+  }
+  
+
+}

@@ -27,4 +27,11 @@ export default {
   fill: currentColor;
   overflow: hidden;
 }
+html,body,#app{
+  height: 100%;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+}
 </style>
