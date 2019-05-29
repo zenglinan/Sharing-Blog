@@ -1,6 +1,6 @@
 <template>
-  <div class="loginWrapper">
-    <div class="login">
+  <div class="registerWrapper">
+    <div class="register">
       <div class="item">
         <label>
           用户名
@@ -18,12 +18,12 @@
           <p>√</p>
         </label>
       </div>
-      <div class="loginButton">
+      <div class="registerButton">
         <el-button type="primary">点我注册</el-button>
       </div>
     </div>
     <p class="loginIn"><span>已有账号？</span><span><a href="/login">直接登录</a></span></p>
   </div>
 </template>
-<script src="./template.js"></script>
-<style lang="scss" scoped src="./template.scss"></style>
+<script src="./register.js"></script>
+<style lang="scss" scoped src="./register.scss"></style>

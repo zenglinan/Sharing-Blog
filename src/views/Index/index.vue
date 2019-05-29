@@ -22,5 +22,5 @@
     </div>
   </div>
 </template>
-<script src="./template.js"></script>
-<style lang="scss" src="./template.scss"></style>
+<script src="./index.js"></script>
+<style lang="scss" src="./index.scss"></style>

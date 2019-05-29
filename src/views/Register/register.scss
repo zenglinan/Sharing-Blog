@@ -1,4 +1,4 @@
-.loginWrapper {
+.registerWrapper {
   width: 75%;
   margin: 0 auto;
   display: flex;
@@ -15,7 +15,7 @@
     }
   }
 
-  .login {
+  .register {
     border: 2px solid rgb(234, 238, 251);
     padding: 36px 30px 36px 30px;
     border-radius: 6px;
@@ -35,7 +35,7 @@
       }
     }
 
-    .loginButton {
+    .registerButton {
       display: flex;
     }
   }

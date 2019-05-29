@@ -7,11 +7,11 @@
         <el-button
           type="primary"
           plain
-        >注册账号</el-button>
+        ><a href="/register">立即注册</a></el-button>
         <el-button
           type="primary"
           plain
-        >立即登陆</el-button>
+        ><a href="/login">立即登陆</a></el-button>
       </el-row>
     </template>
     <template v-else-if="!isLogin">
@@ -65,6 +65,10 @@ header.login {
     margin-top: 60px;
     .el-button {
       margin: 0 10px 0 10px;
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
     }
   }
 }
