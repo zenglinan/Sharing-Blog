@@ -5,7 +5,7 @@ import Create from './views/Create/template.vue'
 import Detail from './views/Detail/template.vue'
 import Edit from './views/Edit/template.vue'
 import Login from './views/Login/login.vue'
-import Mine from './views/Mine/template.vue'
+import Mine from './views/Mine/mine.vue'
 import Register from './views/Register/register.vue'
 import User from './views/User/user.vue'
 
