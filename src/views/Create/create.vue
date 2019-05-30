@@ -1,6 +1,6 @@
 <template>
-  <div class="editWrapper">
-    <h1>编辑文章</h1>
+  <div class="createWrapper">
+    <h1>新建文章</h1>
     <h3>文章标题</h3>
     <el-input
       type="text"
