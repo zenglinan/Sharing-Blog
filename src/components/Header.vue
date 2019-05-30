@@ -83,6 +83,7 @@ header.noLogin {
     justify-content: space-between;
     align-items: center;
     h1 {
+      color: rgb(255, 255, 255);
       font-size: 32px;
       text-transform: uppercase;
     }

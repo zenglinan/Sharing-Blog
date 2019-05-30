@@ -34,4 +34,16 @@ html,body,#app{
   display: flex;
   flex-direction: column;
 }
+h1 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 16px;
+}
+h4 {
+  font-size: 14px;
+}
+h1,h3,h4 {
+  color: #333333;
+}
 </style>
