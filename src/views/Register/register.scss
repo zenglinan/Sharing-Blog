@@ -1,4 +1,5 @@
 .registerWrapper {
+  min-height: 400px;
   width: 75%;
   margin: 0 auto;
   display: flex;
@@ -16,13 +17,12 @@
   }
 
   .register {
-    border: 2px solid rgb(234, 238, 251);
-    padding: 36px 30px 36px 30px;
+    padding: 10px 30px 36px 30px;
     border-radius: 6px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     div.item {
       display: flex;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
       
       .el-input {
         margin-top: 10px;
@@ -36,6 +36,7 @@
     }
 
     .registerButton {
+      margin-top: 20px;
       display: flex;
     }
   }

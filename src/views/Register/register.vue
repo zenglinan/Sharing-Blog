@@ -4,8 +4,7 @@
       <div class="item">
         <label>
           用户名
-          <el-input placeholder="请输入用户名"></el-input>
-          <p>该账户可以注册</p>
+          <el-input placeholder="请输入用户名" v-model="username"></el-input>
         </label>
       </div>
       <div class="item">
@@ -14,15 +13,21 @@
           <el-input
             placeholder="请输入密码"
             show-password
+            v-model="password"
+            @keyup.enter.native="register()"
           ></el-input>
-          <p>√</p>
         </label>
       </div>
       <div class="registerButton">
-        <el-button type="primary">点我注册</el-button>
+        <el-button type="primary" @click="onregister()">点我注册</el-button>
       </div>
     </div>
-    <p class="loginIn"><span>已有账号？</span><span><a href="/login">直接登录</a></span></p>
+    <p class="loginIn">
+      <span>已有账号？</span>
+      <span>
+        <router-link to="/login"><a>直接登录</a></router-link>
+      </span>
+    </p>
   </div>
 </template>
 <script src="./register.js"></script>
