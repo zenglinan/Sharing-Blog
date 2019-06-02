@@ -19,7 +19,7 @@
           <svg class="icon" aria-hidden="true">
             <use xlink:href="#icon-Pencil1"></use>
           </svg>
-          <img src="../assets/avator.png" alt="avator">
+          <img :src="user.avatar" alt="avator" :title="user.username">
           <div class="set">
             <el-dropdown>
               <span class="el-dropdown-link">

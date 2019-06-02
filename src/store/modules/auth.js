@@ -49,10 +49,15 @@ const actions = {
   },
 
   async checkLogin({ commit, state}) {
+    // Vuex状态为登录
     if(state.isLogin) return true
+    // 可能已登录,但是Vuex状态未更新,重新获取一次
     let res = await auth.getInfo()
+    // 更新Vuex状态
     commit('setLogin', { isLogin: res.isLogin })
+    // 未登录
     if(!res.isLogin) return false
+    // 已登录则更新user数据
     commit('setUser', { user: res.data })
     return true
   }
