@@ -20,3 +20,7 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount('#app')
+Vue.filter('toDay',function(date){
+    let time = new Date(date)
+    return `${time.getFullYear()}-${time.getMonth() + 1}-${time.getDate()}`;
+})

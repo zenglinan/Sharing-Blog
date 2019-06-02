@@ -28,10 +28,4 @@ export default {
       this.$router.push({path: `/detail/${id}`})
     }
   },
-  filters: {
-    toDay(date) {
-      let time = new Date(date)
-      return `${time.getFullYear()}-${time.getMonth() + 1}-${time.getDate()}`;
-    }
-  }
 }
