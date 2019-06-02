@@ -4,7 +4,7 @@
       <div class="item">
         <label>
           用户名
-          <el-input placeholder="请输入用户名" v-model="username"></el-input>
+          <el-input @keyup.enter.native="onregister()" placeholder="请输入用户名" v-model="username"></el-input>
         </label>
       </div>
       <div class="item">
@@ -14,7 +14,7 @@
             placeholder="请输入密码"
             show-password
             v-model="password"
-            @keyup.enter.native="register()"
+            @keyup.enter.native="onregister()"
           ></el-input>
         </label>
       </div>
@@ -25,7 +25,9 @@
     <p class="loginIn">
       <span>已有账号？</span>
       <span>
-        <router-link to="/login"><a>直接登录</a></router-link>
+        <router-link to="/login">
+          <a>直接登录</a>
+        </router-link>
       </span>
     </p>
   </div>

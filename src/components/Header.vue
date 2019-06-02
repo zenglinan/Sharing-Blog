@@ -8,17 +8,21 @@
           <el-button type="primary" plain>立即注册</el-button>
         </router-link>
         <router-link to="/login">
-          <el-button type="primary" plain>立即登陆</el-button>
+          <el-button type="primary" plain>立即登录</el-button>
         </router-link>
       </el-row>
     </template>
     <template v-else-if="isLogin">
       <div class="headerContent">
-        <h1>Let's share</h1>
+        <router-link to="/">
+          <h1>Let's share</h1>
+        </router-link>
         <div class="user">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-Pencil1"></use>
-          </svg>
+          <router-link to="/create" tag="span">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-Pencil1"></use>
+            </svg>
+          </router-link>
           <img :src="user.avatar" alt="avator" :title="user.username">
           <div class="set">
             <el-dropdown>
