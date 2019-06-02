@@ -1,4 +1,5 @@
 import blog from '@/api/blog'
+import {Message} from 'element-ui'
 export default {
   data() {
     return {
@@ -11,7 +12,8 @@ export default {
     onCreate() {
       blog.createBlog({ title: this.title, content: this.content, description: '', atIndex: this.atIndex })
         .then(res=>{
-          this.$router.push({path: `/detail/${res.data.id}`})
+          Message.success(res.msg)
+        this.$router.push({path: `/detail/${res.data.id}`})
         })
     }
   }
