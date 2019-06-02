@@ -5,7 +5,7 @@
         <img :src="blog.user.avatar" alt>
         <figcaption :title="blog.user.username">{{ blog.user.username }}</figcaption>
       </figure>
-      <article>
+      <article @click="toDetail(blog.id)">
         <h3>
           {{ blog.title }}
           <span>{{ blog.updatedAt | toDay }}</span>

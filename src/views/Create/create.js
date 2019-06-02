@@ -10,7 +10,7 @@ export default {
   },
   methods: {
     onCreate() {
-      blog.createBlog({ title: this.title, content: this.content, description: '', atIndex: this.atIndex })
+      blog.createBlog({ title: this.title, content: this.content, atIndex: this.atIndex })
         .then(res=>{
           Message.success(res.msg)
         this.$router.push({path: `/detail/${res.data.id}`})
