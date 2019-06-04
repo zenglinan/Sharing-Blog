@@ -17,10 +17,10 @@
             <p>{{ blog.description }}</p>
             <div class="control">
               <span>
-                <a href="#">编辑</a>
+                <router-link :to='`/edit/${blog.id}`'>编辑</router-link>
               </span>
               <span>
-                <a href="#">删除</a>
+                <a href="javascript:;" @click.prevent="onDelete(blog.id)">删除</a>
               </span>
             </div>
           </div>

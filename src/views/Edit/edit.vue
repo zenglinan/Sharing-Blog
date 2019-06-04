@@ -5,12 +5,12 @@
     <el-input
       type="text"
       placeholder="请输入内容"
-      maxlength="20"
+      maxlength="40"
       show-word-limit
       v-model="title"
     >
     </el-input>
-    <p class="msg">限20个字</p>
+    <p class="msg">限40个字</p>
     <h3>文章内容</h3>
     <el-input
       type="textarea"
@@ -21,7 +21,7 @@
     >
     </el-input>
     <p class="msg">限30个字</p>
-    <el-button type="primary">发表文章</el-button>
+    <el-button type="primary" @click="onUpdateBlog()">发表文章</el-button>
   </div>
 </template>
 <style src="./edit.scss" scoped lang="scss"></style>

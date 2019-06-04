@@ -1,5 +1,6 @@
 import { mapState } from 'vuex'
 import formatDate from '../../helper/formatDate'
+import { Message } from 'element-ui';
 export default {
   data() {
     return {
@@ -16,6 +17,13 @@ export default {
       })
   },
   methods: {
-    formatDate
+    formatDate,
+    onDelete(id) {
+      blog.deleteBlog({ blogId: id })
+        .then(res => {
+          Message.success(res.msg)
+          this.$router.go(0)
+        })
+    }
   }
 }
