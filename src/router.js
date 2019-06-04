@@ -14,8 +14,6 @@ Vue.use(Router)
 window.store = store
 
 const router = new Router({
-  mode: 'history',
-  base: process.env.BASE_URL,
   routes: [
     { path: '/', component: Index },
     { path: '/create', component: Create, meta: { requiresAuth: true } },
@@ -37,7 +35,6 @@ const router = new Router({
             next()
           }
         }
-
       }
     },
   ]
