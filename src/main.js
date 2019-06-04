@@ -7,10 +7,11 @@ import blog from './api/blog'
 import auth from './api/auth'
 import store from './store/index'
 import 'element-ui/lib/theme-chalk/index.css'
-
+/**测试代码 */
 window.request = request
 window.blog = blog
 window.auth = auth
+/***/
 
 Vue.use(ElementUI)
 Vue.config.productionTip = false

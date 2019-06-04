@@ -1,10 +1,12 @@
 <template>
   <div class="indexWrapper">
     <div class="item" v-for="blog in blogs" :key="blog.id">
-      <figure class="avatar">
-        <img :src="blog.user.avatar" alt>
-        <figcaption :title="blog.user.username">{{ blog.user.username }}</figcaption>
-      </figure>
+      <router-link :to='`/user/${blog.id}`' tag="div" class="figuerWrapper"> 
+        <figure class="avatar">
+          <img :src="blog.user.avatar" alt>
+          <figcaption :title="blog.user.username">{{ blog.user.username }}</figcaption>
+        </figure>
+      </router-link>
       <article @click="toDetail(blog.id)">
         <h3>
           {{ blog.title }}
