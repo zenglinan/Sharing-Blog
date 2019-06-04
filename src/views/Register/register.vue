@@ -25,7 +25,7 @@
     <p class="loginIn">
       <span>已有账号？</span>
       <span>
-        <router-link to="/login">
+        <router-link to="./login">
           <a>直接登录</a>
         </router-link>
       </span>

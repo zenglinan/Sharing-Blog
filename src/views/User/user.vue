@@ -11,7 +11,7 @@
           <span class="month">{{ formatDate(blog.updatedAt).month }}月</span>
           <span class="year">{{ formatDate(blog.updatedAt).year }}</span>
         </div>
-        <router-link :to="`/detail/${blog.id}`">
+        <router-link :to="`./detail/${blog.id}`">
           <div class="article">
             <h3>{{ blog.title }}</h3>
             <p>{{ blog.description }}</p>

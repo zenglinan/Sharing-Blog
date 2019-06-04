@@ -25,7 +25,7 @@
     <p class="loginIn">
       <span>没有账号？</span>
       <span>
-        <router-link to="/register">
+        <router-link to="./register">
           <a>点我注册</a>
         </router-link>
       </span>
