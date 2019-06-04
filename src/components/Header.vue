@@ -4,21 +4,21 @@
       <h1>Let's share</h1>
       <h4>多人共享博客</h4>
       <el-row>
-        <router-link to="./register">
+        <router-link to="/register">
           <el-button type="primary" plain>立即注册</el-button>
         </router-link>
-        <router-link to="./login">
+        <router-link to="/login">
           <el-button type="primary" plain>立即登录</el-button>
         </router-link>
       </el-row>
     </template>
     <template v-else-if="isLogin">
       <div class="headerContent">
-        <router-link to="./">
+        <router-link to="/">
           <h1>Let's share</h1>
         </router-link>
         <div class="user">
-          <router-link to="./create" tag="span">
+          <router-link to="/create" tag="span">
             <svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-Pencil1"></use>
             </svg>
@@ -32,10 +32,10 @@
                 </svg>
               </span>
               <el-dropdown-menu slot="dropdown">
-                <router-link to="./mine" class="navItem">
+                <router-link to="/mine" class="navItem">
                   <el-dropdown-item>我的博客</el-dropdown-item>
                 </router-link>
-                <a to="./" class="navItem" @click.prevent="logout()">
+                <a to="/" class="navItem" @click.prevent="logout()">
                   <el-dropdown-item>注销账号</el-dropdown-item>
                 </a>
               </el-dropdown-menu>
