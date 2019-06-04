@@ -1,12 +1,7 @@
 <template>
   <div class="userWrapper">
     <section class="userInfo">
-      <img
-        :src="user.avatar"
-        :alt="user.username"
-        :title="user.username"
-        class="avatar"
-      >
+      <img :src="user.avatar" :alt="user.username" :title="user.username" class="avatar">
       <h3>{{ user.username }}</h3>
     </section>
     <article>
@@ -16,10 +11,12 @@
           <span class="month">{{ formatDate(blog.updatedAt).month }}月</span>
           <span class="year">{{ formatDate(blog.updatedAt).year }}</span>
         </div>
-        <div class="article">
-          <h3>{{ blog.title }}</h3>
-          <p>{{ blog.description }}</p>
-        </div>
+        <router-link :to="`/detail/${blog.id}`">
+          <div class="article">
+            <h3>{{ blog.title }}</h3>
+            <p>{{ blog.description }}</p>
+          </div>
+        </router-link>
       </div>
     </article>
   </div>

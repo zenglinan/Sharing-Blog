@@ -13,7 +13,6 @@ export default {
   created() {
     this.userId = parseInt(this.$route.params.userId)
     this.page = parseInt(this.$route.query.page) || 1
-    console.log(this.userId)
     blog.getBlogsByUserId(this.userId, { page: this.page })
       .then(res => {
         if (res.data.length !== 0) {
@@ -27,6 +26,7 @@ export default {
       })
   },
   methods: {
-    formatDate
+    formatDate,
+    
   }
 }

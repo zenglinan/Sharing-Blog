@@ -5,7 +5,7 @@
       <h3>{{ blog.title }}</h3>
       <p>
         <router-link :to="`/user/${user.id}`">{{ user.username }}</router-link>
-        发布于{{ blog.createdAt | toDay}}
+        发布于{{ formatDate(blog.createdAt).day }}
       </p>
     </section>
     <section class="description">

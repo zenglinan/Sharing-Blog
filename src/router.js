@@ -11,6 +11,7 @@ import User from './views/User/user.vue'
 import store from './store/index'
 
 Vue.use(Router)
+window.store = store
 
 const router = new Router({
   mode: 'history',
@@ -23,7 +24,22 @@ const router = new Router({
     { path: '/login', component: Login },
     { path: '/mine', component: Mine, meta: { requiresAuth: true } },
     { path: '/register', component: Register },
-    { path: '/User/:userId', component: User },
+    {
+      path: '/user/:userId',
+      component: User,
+      beforeEnter: (to, from, next) => {
+        if (store.state.auth.user === null) {
+          next()
+        } else {
+          if (to.params.userId == store.state.auth.user.id) {
+            next({ path: '/mine' })
+          } else {
+            next()
+          }
+        }
+
+      }
+    },
   ]
 })
 router.beforeEach((to, from, next) => {
