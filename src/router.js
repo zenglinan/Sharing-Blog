@@ -54,7 +54,7 @@ const router =  new Router({
       }
     },
     {
-      path: '/my',
+      path: '/mine',
       component: () => import('@/views/Mine/mine.vue'),
       meta: { requiresAuth: true }
     },
