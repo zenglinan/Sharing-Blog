@@ -11,7 +11,9 @@ export default {
     this.page = parseInt(this.$route.query.page) || 1
     blog.getIndexBlogs({ page: this.page })
       .then(res => {
-        this.blogs = res.data
+        this.blogs = res.data.filter((item)=>{
+          return item.user !== null
+        })
         this.total = res.total
       })
   },
